@@ -22,7 +22,7 @@ public class SpringBootRestFacet extends AbstractFacet<Project> implements
 	@Inject
 	private DependencyInstaller dependencyInstaller;
 
-	public static Dependency[] DEPENDENCIES = { DependencyBuilder.create(
+	private static Dependency[] DEPENDENCIES = { DependencyBuilder.create(
 			"org.springframework.data").setArtifactId("spring-data-rest-core") };
 
 	@Override
